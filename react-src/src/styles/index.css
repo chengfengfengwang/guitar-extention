@@ -4,19 +4,28 @@
 }
 #react-root {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
-#react-root{
-  display: flex;
-  justify-content: center;
+.drag {
+  position: absolute;
+  top: 0px;
+}
+.tool {
+  display: block;
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  padding: 20px;
+  top: -50px
+}
+.tool_inner {
+  border: 1px solid #666;
+}
+.tool_inner img {
+  width: 20px;
 }
 .guitar_wrapper{
   visibility: visible;
-}
-.drag {
-  position: relative;
-}
-.drag img {
-  height: 100%;
 }
